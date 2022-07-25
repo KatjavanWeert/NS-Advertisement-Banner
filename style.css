@@ -1,0 +1,38 @@
+h1 {
+color: #233973;
+font-family: NSfont, Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: x-large;
+}
+h2 {
+    color: #233973;
+    font-family: NSfont, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    }
+
+p {
+    color: #233973;
+    font-family: NSfont, Arial, Helvetica, sans-serif;
+    }
+
+/* Colors
+NS Yellow   #FEC818 
+NS Blue     #233973
+*/
+
+/* Fonts */
+@font-face {
+    font-family: NSfont;
+    src: url('assets/Fonts/nssans__-webfont.ttf');
+}
+@font-face {
+    font-family: NSfont;
+    font-weight: bold;
+    src: url('assets/Fonts/nssanbol-webfont.ttf');
+}
+@font-face {
+    font-family: NSfont;
+    font-style: italic;
+    src: url('assets/Fonts/nssanbit-webfont.ttf');
+}
