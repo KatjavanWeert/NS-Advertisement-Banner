@@ -1,6 +1,8 @@
 // The people that are displayed can be dependent upon the information that we have about the audience
 // The background image can also be dependent
 
+let state = "start";
+
 const tl1 = gsap.timeline({ repeatRefresh: true });
 
 //Stage 1: introducing NS and grab attention
@@ -63,6 +65,23 @@ tl1.to(
   },
   "<"
 );
+tl1.to(".header", {
+  y: -200,
+});
+
+tl1.fromTo(
+  ".train",
+  { x: 200, opacity: 0 },
+  { duration: 4, opacity: 100, x: -170 }
+);
+tl1.to(".header", {
+  opacity: 0,
+});
+tl1.to(".startDiv", {
+  display: "none",
+});
+tl1.to(".secondDiv", { display: "inline" });
+tl1.to(".explanation", { opacity: 100 });
 
 window.addEventListener("click", () => {
   tl1.restart();
