@@ -2,44 +2,55 @@
     <link rel="stylesheet" href="style.css">
     </head>
 <body>
-<div>
+<div style="position: relative; width: 300px; height: 250px; overflow: hidden;">
     <div class="background">
         <img class="overlay" src="assets/Beeldmateriaal/WhiteOverlay2.svg" style="opacity: 60%;">
     </div>
     <div class="startDiv" style="padding: 2.5%;">
-    <div style="position: relative; height: 50%; margin-top: 16%;">
+    <div class="logo" style="position: relative; height: 50%; margin-top: 16%;">
         <div style="position: absolute; width: 80%; right: 20%;">
         <img class="NSarrow1" src="assets/Logo/NS_arrow1.svg" >
     </div>
     <div style="position: absolute; width: 80%; left: 20%;">
         <img class="NSarrow2" src="assets/Logo/NS_arrow2.svg" >
     </div>
+</div>
     </div>
-
-    <h1 class="header" style="padding-top: 5%;">Met wie ga jij op reis?</h1>
-</div>
-
-<div class="secondDiv" style="display: none;">
-    <p class="explanation" style="opacity: 0;">Reis deze zomer goedkoop met het groepsticket daluren! 
+<h1 class="header" style="padding-top: 5px;">Met wie ga jij op reis?</h1>
+<div class="explanation" style="position: absolute; opacity: 0; width:300px; top:30px;">
+    <p>Reis deze zomer goedkoop met het groepsticket daluren! 
         Een enkele reis voor een vaste prijs.</p>
-    <h2 class="promotion"  style="opacity: 0;">Nu voor <div class="price">€6,50</div> per persoon</h2>
-    <p class="subscript" style="font-size: small;"  style="opacity: 0;">Meer informatie? Ga naar <link href="www.ns.nl/uitgelicht/acties/laat-jezelf-weer-gaan">www.ns.nl/uitgelicht/acties/laat-jezelf-weer-gaan</link></p>
-</div>
-<div class="trainDiv" style="position: absolute; top: 0; width: 300px; height: 250px; padding-top: 110px; padding-bottom: 10px; overflow: hidden;">
-    <img class="train" style="opacity: 0;" src="assets/Icons/TrainImage.svg" height="150px">
-</div>
-<div style="display:flex; width:300px">
-    <button class="icon1">
-        <img src="assets/Icons/person-cane-solid.svg">
+    </div>
+     <div class="promotion"  style="position: absolute; width:300px; top:50px; opacity: 0;">
+     <div>Nu voor </div><div class="price">€16</div><div> per persoon</div>
+    </div>
+    <p class="subscript" style="position: absolute; font-size: small; opacity: 0;">Meer informatie? Ga naar <link href="www.ns.nl/uitgelicht/acties/laat-jezelf-weer-gaan">www.ns.nl/uitgelicht/acties/laat-jezelf-weer-gaan</link></p>
+<div style="position:absolute;  display:flex; justify-content: flex-start; left: 70px; width:100px; bottom:50px;">
+    <button class="iconInTrain grandpaInTrain">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M240 48C240 74.51 218.5 96 192 96C165.5 96 144 74.51 144 48C144 21.49 165.5 0 192 0C218.5 0 240 21.49 240 48zM232 480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V352H152V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480V256.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C80.2 145.7 111.4 128 145.1 128H181C209.6 128 236.7 140.7 254.9 162.7L328.6 251.6C339.9 265.2 338 285.3 324.4 296.6C310.8 307.9 290.7 306 279.4 292.4L232 235.3L232 480zM320 384C320 397.3 309.3 408 296 408C282.7 408 272 397.3 272 384V376C272 345.1 297.1 320 328 320C358.9 320 384 345.1 384 376V488C384 501.3 373.3 512 360 512C346.7 512 336 501.3 336 488V376C336 371.6 332.4 368 328 368C323.6 368 320 371.6 320 376V384z"/></svg>
     </button>
-    <button class="icon2">
-        <img src="assets/Icons/child-reaching-solid.svg">
+    <button class="iconInTrain childInTrain">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M256 64C256 99.35 227.3 128 192 128C156.7 128 128 99.35 128 64C128 28.65 156.7 0 192 0C227.3 0 256 28.65 256 64zM155.7 170.2C167.3 173.1 179.6 176 192.2 176C232.1 176 269.3 155.8 291 122.4L309.2 94.54C318.8 79.73 338.6 75.54 353.5 85.18C368.3 94.82 372.5 114.6 362.8 129.5L344.7 157.3C326.4 185.4 301.2 207.3 272 221.6V480C272 497.7 257.7 512 240 512C222.3 512 208 497.7 208 480V384H176V480C176 497.7 161.7 512 144 512C126.3 512 112 497.7 112 480V221.4C83.63 207.4 58.94 186.1 40.87 158.1L21.37 129.8C11.57 115 15.54 95.18 30.25 85.37C44.95 75.57 64.82 79.54 74.62 94.25L94.12 123.5C108.5 145 129.2 160.9 152.9 169.3C153.9 169.5 154.8 169.8 155.7 170.2V170.2z"/></svg>
     </button>
+</div>
+<div class="trainDiv" style="position: absolute; bottom: 0; width: 300px; overflow: hidden;">
+    <img class="train" style="opacity: 0;" src="assets/Beeldmateriaal/TrainImage.svg" height="140px">
+</div>
+<div style="position:absolute; display:flex; width:300px; bottom:-30px;">
+    <button class="iconbutton grandpa" onclick="moveTraveller('grandpa')">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M240 48C240 74.51 218.5 96 192 96C165.5 96 144 74.51 144 48C144 21.49 165.5 0 192 0C218.5 0 240 21.49 240 48zM232 480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V352H152V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480V256.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C80.2 145.7 111.4 128 145.1 128H181C209.6 128 236.7 140.7 254.9 162.7L328.6 251.6C339.9 265.2 338 285.3 324.4 296.6C310.8 307.9 290.7 306 279.4 292.4L232 235.3L232 480zM320 384C320 397.3 309.3 408 296 408C282.7 408 272 397.3 272 384V376C272 345.1 297.1 320 328 320C358.9 320 384 345.1 384 376V488C384 501.3 373.3 512 360 512C346.7 512 336 501.3 336 488V376C336 371.6 332.4 368 328 368C323.6 368 320 371.6 320 376V384z"/></svg>
+    </button>
+    <button class="iconbutton child" onclick="moveTraveller('child')">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M256 64C256 99.35 227.3 128 192 128C156.7 128 128 99.35 128 64C128 28.65 156.7 0 192 0C227.3 0 256 28.65 256 64zM155.7 170.2C167.3 173.1 179.6 176 192.2 176C232.1 176 269.3 155.8 291 122.4L309.2 94.54C318.8 79.73 338.6 75.54 353.5 85.18C368.3 94.82 372.5 114.6 362.8 129.5L344.7 157.3C326.4 185.4 301.2 207.3 272 221.6V480C272 497.7 257.7 512 240 512C222.3 512 208 497.7 208 480V384H176V480C176 497.7 161.7 512 144 512C126.3 512 112 497.7 112 480V221.4C83.63 207.4 58.94 186.1 40.87 158.1L21.37 129.8C11.57 115 15.54 95.18 30.25 85.37C44.95 75.57 64.82 79.54 74.62 94.25L94.12 123.5C108.5 145 129.2 160.9 152.9 169.3C153.9 169.5 154.8 169.8 155.7 170.2V170.2z"/></svg>
+    </button>
+</div>
+
 </div>
 
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
 <script type="text/javascript" src="animations.js"></script>
 
 </body>

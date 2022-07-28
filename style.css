@@ -18,10 +18,13 @@ p {
 }
 
 button {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 60px;
   border: none;
-  fill: none;
+  background-color: transparent;
+  padding: 0px;
+}
+svg {
 }
 
 .background {
@@ -32,6 +35,33 @@ button {
   background-position: center;
   position: absolute;
   z-index: -1;
+}
+
+.icon {
+  fill: grey;
+}
+.icon:hover {
+  fill: #fec818;
+}
+
+.iconInTrain {
+  width: 30px;
+  height: 40px;
+  opacity: 0;
+}
+
+.promotion {
+  color: #233973;
+  font-family: NSfont, Arial, Helvetica, sans-serif;
+  font-size: large;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price {
+  font-size: 40px;
+  font-weight: bold;
 }
 
 /* Colors
